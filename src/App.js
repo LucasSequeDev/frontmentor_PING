@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
+
+// Assets
+import dashboard from './assets/img/illustration-dashboard.png';
+import logo from './assets/img/logo.svg';
+
+// Components
+import Suscribe from "./components/Suscribe";
+import Social from "./components/Social"
+import Footer from "./components/Footer"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <img src={logo} alt='Dashboard'/>
+      <Suscribe />
+      <img src={dashboard} alt='Dashboard'/>
+      <Social />
+      <Footer />
+    </Fragment>
   );
 }
 
