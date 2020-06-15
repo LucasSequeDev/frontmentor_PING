@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Suscribe() {
     return (
-        <section>
-            <span>Where are launching <b>soon!</b></span>
-            <p>Suscribe and get notified</p>
-            <input />
-            <button>Notify Me</button>
+        <section className='suscribe'>
+            <span className='title'>We are launching <b className='soon'>soon!</b></span>
+            <p className='subtitle'>Suscribe and get notified</p>
+            <input className='input-email' placeholder='Your email address...'/>
+            <button className='btn btn-primary btn-suscribe'>Notify Me</button>
         </section>
     )
 }

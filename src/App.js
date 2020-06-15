@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.css';
 
 // Assets
@@ -12,13 +12,13 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-    <Fragment>
-      <img src={logo} alt='Dashboard'/>
+    <div className='container'>
+      <img className='logo' src={logo} alt='Dashboard'/>
       <Suscribe />
-      <img src={dashboard} alt='Dashboard'/>
+      <img className='dashboard' src={dashboard} alt='Dashboard'/>
       <Social />
       <Footer />
-    </Fragment>
+    </div>
   );
 }
 
